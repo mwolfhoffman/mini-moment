@@ -52,7 +52,7 @@ export default class TimeModule {
         return this.msToTime(diff);
     }
 
-    convertUTCDateToLocalDate = function (date) {
+    convertToLocal = function (date) {
         let n = new Date(date);
         let utcHours = n.getHours();
         let offset = n.getTimezoneOffset();
